@@ -11,11 +11,11 @@
     	{
             "type": "shell",
             "scripts": [
-                "vmscripts/base.sh",
-                "vmscripts/virtualbox.sh",
-                "vmscripts/vagrant.sh",
-                "vmscripts/dep.sh",
-                "vmscripts/prepapps.sh"
+                "scripts/base.sh",
+                "scripts/virtualbox.sh",
+                "scripts/vagrant.sh",
+                "scripts/dep.sh",
+                "scripts/prepapps.sh"
             ],
             "override": {
                 "virtualbox-iso": {
@@ -25,20 +25,25 @@
         },
     	{
     		"type": "file",
-    		"source": "esplugin",
-    		"destination": "~/nlptab-esplugin"
+    		"source": "NLP-TAB",
+    		"destination": "/home/vagrant/NLP-TAB"
     	},
     	{
     		"type": "file",
-    		"source": "webapp",
-    		"destination": "~/nlptab-webapp"
+    		"source": "NLP-TAB-webapp",
+    		"destination": "/home/vagrant/NLP-TAB-webapp"
+    	},
+    	{
+    		"type": "file",
+    		"source": "NLP-TAB-corpus",
+    		"destination": "/home/vagrant/NLP-TAB-corpus"
     	},
         {
             "type": "shell",
             "scripts": [
-            	"vmscripts/apps.sh",
-                "vmscripts/cleanup.sh",
-                "vmscripts/zerodisk.sh"
+            	"scripts/apps.sh",
+                "scripts/cleanup.sh",
+                "scripts/zerodisk.sh"
             ],
             "override": {
                 "virtualbox-iso": {
