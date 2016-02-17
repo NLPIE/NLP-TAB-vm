@@ -1,13 +1,15 @@
-cd /home/vagrant/NLP-TAB
+cd /home/vagrant/nlptab
 
 mvn clean install
 
-/usr/share/elasticsearch/bin/plugin install file:///home/vagrant/NLP-TAB/target/releases/nlptab-1.1.0-SNAPSHOT.zip
+/usr/share/elasticsearch/bin/plugin install file:///home/vagrant/NLP-TAB/target/releases/nlptab-1.1.0.zip
 
-cd /home/vagrant/NLP-TAB-webapp
+cd /home/vagrant/nlptab-webapp
 
 npm install
-GIT_DIR=/tmp bower --allow-root install
-grunt build
 
-cp -R dist/ /var/www/html/
+gulp
+
+cp -R app/* /var/www/html/
+
+ufw allow http

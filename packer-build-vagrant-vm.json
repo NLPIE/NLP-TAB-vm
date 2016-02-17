@@ -25,18 +25,23 @@
         },
     	{
     		"type": "file",
-    		"source": "NLP-TAB",
-    		"destination": "/home/vagrant/NLP-TAB"
+    		"source": "nlptab",
+    		"destination": "/home/vagrant/nlptab"
     	},
     	{
     		"type": "file",
-    		"source": "NLP-TAB-webapp",
-    		"destination": "/home/vagrant/NLP-TAB-webapp"
+    		"source": "nlptab-webapp",
+    		"destination": "/home/vagrant/nlptab-webapp"
     	},
     	{
     		"type": "file",
-    		"source": "NLP-TAB-corpus",
-    		"destination": "/home/vagrant/NLP-TAB-corpus"
+    		"source": "nlptab-corpus",
+    		"destination": "/home/vagrant/nlptab-corpus"
+    	},
+    	{
+    		"type": "file",
+    		"source": "resources",
+    		"destination": "/home/vagrant/resources"
     	},
         {
             "type": "shell",
@@ -89,11 +94,11 @@
         {
             "type": "atlas",
             "only": ["virtualbox-iso"],
-            "artifact": "benknoll_umn/nlptab-vm",
+            "artifact": "nlpie/nlptab-vm",
             "artifact_type": "vagrant.box",
             "metadata": {
                 "provider": "virtualbox",
-                "version": "0.0.2"
+                "version": "0.1.0"
             }
         }]
     ]

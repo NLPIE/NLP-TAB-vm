@@ -12,19 +12,18 @@ add-apt-repository -y ppa:webupd8team/java
 
 wget -qO - https://packages.elastic.co/GPG-KEY-elasticsearch | apt-key add -
 
-curl -sL https://deb.nodesource.com/setup | bash -
-
 echo "deb http://packages.elastic.co/elasticsearch/2.x/debian stable main" | tee -a /etc/apt/sources.list.d/elasticsearch-2.x.list
 
 echo debconf shared/accepted-oracle-license-v1-1 select true | debconf-set-selections
 echo debconf shared/accepted-oracle-license-v1-1 seen true | debconf-set-selections
 
-apt-get -y update
+curl -sL https://deb.nodesource.com/setup | bash -
 
-apt-get -y install postgresql postgresql-contrib oracle-java8-installer elasticsearch=2.1.0 apache2 apache2-doc apache2-utils maven git nodejs build-essential
+apt-get -y install postgresql postgresql-contrib oracle-java8-installer \
+elasticsearch=2.1.0 apache2 apache2-doc apache2-utils maven git nodejs build-essential
 
 update-rc.d elasticsearch defaults 95 10
 
-npm install npm -g
+npm install -g npm
 
-npm install -g grunt-cli bower
+npm install -g gulp-cli

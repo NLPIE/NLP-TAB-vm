@@ -1,9 +1,9 @@
-[submodule "NLP-TAB"]
-	path = NLP-TAB
-	url = https://github.com/NLPIE/NLP-TAB.git
-[submodule "NLP-TAB-corpus"]
-	path = NLP-TAB-corpus
-	url = https://github.com/NLPIE/NLP-TAB-corpus.git
-[submodule "NLP-TAB-webapp"]
-	path = NLP-TAB-webapp
-	url = https://github.com/NLPIE/NLP-TAB-webapp.git
+[submodule "nlptab"]
+	path = nlptab
+	url = https://github.com/nlpie/nlptab.git
+[submodule "nlptab-webapp"]
+	path = nlptab-webapp
+	url = https://github.com/nlpie/nlptab-webapp.git
+[submodule "nlptab-corpus"]
+	path = nlptab-corpus
+	url = https://github.com/nlpie/nlptab-corpus.git
