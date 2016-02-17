@@ -1,9 +1,0 @@
-[submodule "nlptab"]
-	path = nlptab
-	url = https://github.com/nlpie/nlptab.git
-[submodule "nlptab-webapp"]
-	path = nlptab-webapp
-	url = https://github.com/nlpie/nlptab-webapp.git
-[submodule "nlptab-corpus"]
-	path = nlptab-corpus
-	url = https://github.com/nlpie/nlptab-corpus.git
