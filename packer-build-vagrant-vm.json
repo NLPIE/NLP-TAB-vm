@@ -9,6 +9,10 @@
     },
     "provisioners": [
     	{
+    		"type": "shell-local",
+    		"command": "git submodule update --init"
+    	},
+    	{
             "type": "shell",
             "scripts": [
                 "scripts/base.sh",
