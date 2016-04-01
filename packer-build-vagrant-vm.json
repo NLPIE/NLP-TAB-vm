@@ -15,7 +15,8 @@
                 "scripts/virtualbox.sh",
                 "scripts/vagrant.sh",
                 "scripts/dep.sh",
-            	"scripts/apps.sh",
+            	"scripts/nlptab.sh",
+            	"scripts/nlptab-webapp.sh",
                 "scripts/cleanup.sh",
                 "scripts/zerodisk.sh"
             ],
